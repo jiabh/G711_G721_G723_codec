@@ -6,6 +6,7 @@
  * Usage : encode [-3|4|5] [-a|u|l] < infile > outfile
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include "g72x.h"
 
 
@@ -34,7 +35,7 @@ pack_output(
 }
 
 
-main(
+int main(
 	int			argc,
 	char			**argv)
 {
@@ -116,4 +117,6 @@ fprintf(stderr, "\t-l\tProcess 16-bit linear PCM input data\n");
 		resid = pack_output(0, enc_bits);
 	}
 	fclose(stdout);
+
+    return 0;
 }

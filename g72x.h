@@ -74,7 +74,7 @@ struct g72x_state {
 
 /* External function definitions. */
 
-extern void g72x_init_stat(struct g72x_state *);
+extern void g72x_init_state(struct g72x_state *);
 extern int g721_encoder(
 		int sample,
 		int in_coding,

@@ -30,6 +30,7 @@
  * Common routines for G.721 and G.723 conversions.
  */
 
+#include <stdlib.h>
 #include "g72x.h"
 
 static short power2[15] = {1, 2, 4, 8, 0x10, 0x20, 0x40, 0x80,

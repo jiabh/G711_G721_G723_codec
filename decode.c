@@ -6,6 +6,7 @@
  * Usage : decode [-3|4|5] [-a|u|l] < infile > outfile
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include "g72x.h"
 
 
@@ -37,9 +38,7 @@ unpack_input(
 }
 
 
-main(
-	int			argc,
-	char			**argv)
+int main(int argc, char **argv)
 {
 	short			sample;
 	unsigned char		code;
@@ -110,4 +109,6 @@ fprintf(stderr, "\t-l\tGenerate 16-bit linear PCM data\n");
 		}
 	}
 	fclose(stdout);
+
+    return 0;
 }
